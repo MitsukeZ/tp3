@@ -1,8 +1,8 @@
-public class Cryptomonnaie{
+public class MeteoDuBitCoin{
     private String nom;
     private double valeurDeJeton; // Imaginons en euros
 
-    public Cryptomonnaie(String nom, double valeurDeJeton){
+    public MeteoDuBitCoin(String nom, double valeurDeJeton){
         this.nom = nom;
         this.valeurDeJeton = valeurDeJeton;
     }
