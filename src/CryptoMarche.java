@@ -28,9 +28,8 @@ public class CryptoMarche {
         double capital = 0.0;
 
         for (Portefeuille p : this.portefeuilles) {
-            if (p != null) {capital += p.valeurEnEuros();}
+            if (p != null && p.getProprietaire().equals(proprietaire)) {capital += p.valeurEnEuros();}
         }
-
         return capital;
     }
 
@@ -45,7 +44,7 @@ public class CryptoMarche {
         double capital = 0.0;
 
         for (Portefeuille p : this.portefeuilles) {
-            if (p != null && p.getMonnaie() == monnaie) {capital += p.getMontant();}
+            if (p != null && p.getMonnaie() == monnaie) {capital += p.valeurEnEuros();}
         }
 
         return capital;
