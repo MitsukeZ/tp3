@@ -32,7 +32,7 @@ public class Portefeuille {
 
         destination.achatDevise(montantJetons*monnaie.getValeurDeJeton());
 
-        this.montant -= montantJetons*monnaie.getValeurDeJeton();
+        this.montant -= montantJetons;
 
         return true;
     }
